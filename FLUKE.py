@@ -46,6 +46,7 @@ MY_DXL = 'X_SERIES'       # X330 (5.0 V recommended), X430, X540, 2X430 (Note th
 # Control table address
 ADDR_TORQUE_ENABLE          = 64
 ADDR_GOAL_POSITION          = 116
+ADDR_GOAL_VELOCITY          = 104
 ADDR_PRESENT_POSITION       = 132
 ADDR_OPERATING_MODE         = 11
 
@@ -69,14 +70,14 @@ TORQUE_DISABLE              = 0                 # Value for disabling the torque
 MAX_POSITION_VALUE          = 1048575           # Of MX with firmware 2.0 and X-Series the revolution on Extended Position Control Mode is 256 rev
 DXL_MOVING_STATUS_THRESHOLD = 20                # Dynamixel will rotate between this value
 
+# ASCII for keyboard in python
 ESC_ASCII_VALUE             = 0x1b
 SPACE_ASCII_VALUE           = 0x20
 BACKSPACE_ASCII_VALUE       = 0x08
-LEFT_ARROW_ASCII_VALUE      = 0x21
-RIGHT_ARROW_ASCII_VALUE     = 0x22
-UP_ARROW_ASCII_VALUE        = 0x23
-DOWN_ARROW_ASCII_VALUE      = 0x24
-
+W_ASCII_VALUE               = 0x57
+A_ASCII_VALUE               = 0x41
+S_ASCII_VALUE               = 0x53
+D_ASCII_VALUE               = 0x44
 
 
 # Initialize PortHandler instance
@@ -148,23 +149,14 @@ while 1:
     print("\nPress any key to continue! (or press ESC to quit!)")
     if getch() == chr(ESC_ASCII_VALUE):
         break
-    elif getch() == chr(RIGHT_ARROW_ASCII_VALUE):
-        print("right arrow detected")
-    elif getch() == chr(LEFT_ARROW_ASCII_VALUE):
-        print("left arrow detected")
-    elif getch() == chr(UP_ARROW_ASCII_VALUE):
-        print("up arrow detected")
-    elif getch() == chr(DOWN_ARROW_ASCII_VALUE):
-        print("down arrow detected")
-    elif getch() == chr(SPACE_ASCII_VALUE):
-        # when SPACE key is pressed motors' speed value increase
-        print("spacebar detected")
-    elif getch() == chr(BACKSPACE_ASCII_VALUE):
-        # when BACKSPACE key is pressed motors' speed value decrease
-        print("backspace detected")
-        # elif getch() == chr()
-        
-    print("  Press SPACE key to clear multi-turn information! (or press ESC to stop!)")
+    elif getch() == chr(W_ASCII_VALUE):
+        print("W key detected")
+    elif getch() == chr(A_ASCII_VALUE):
+        print("A key detected")
+    elif getch() == chr(S_ASCII_VALUE):
+        print("S key detected")
+    elif getch() == chr(D_ASCII_VALUE):
+        print("D key detected")
 
     # Write goal position
     dxl_comm_result, dxl_error = packetHandler.write4ByteTxRx(portHandler, YAW_ID, ADDR_GOAL_POSITION, MAX_POSITION_VALUE)
