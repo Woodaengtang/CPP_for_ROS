@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/eunjipark/Library/CloudStorage/GoogleDrive-eunji.park@kse.kaist.ac.kr/My Drive/0_중앙대학교/class/OOP_2023가을/0. Fall2023_OOP수업자료/예제소스코드/Chapter02",
+      "program": "/Users/eunjipark/Library/CloudStorage/GoogleDrive-eunji.park@kse.kaist.ac.kr/My Drive/0_중앙대학교/class/OOP_2023가을/0. Fall2023_OOP수업자료/예제소스코드/Chapter02/build/Debug/outDebug"
+    }
+  ]
+}
