@@ -1,2 +1,7 @@
-﻿  Chap2_1.cpp
-  OOP.vcxproj -> C:\CAU\Git\CPP_for_ROS\OOP\x64\Debug\OOP.exe
+﻿  Display10_7.cpp
+C:\CAU\Git\CPP_for_ROS\OOP\Display10_7.cpp(92,16): error C2065: 'staticCast': 선언되지 않은 식별자입니다.
+C:\CAU\Git\CPP_for_ROS\OOP\Display10_7.cpp(92,27): error C2062: 예기치 않은 'int' 형식입니다.
+C:\CAU\Git\CPP_for_ROS\OOP\Display10_7.cpp(93,14): error C2065: 'staticCast': 선언되지 않은 식별자입니다.
+C:\CAU\Git\CPP_for_ROS\OOP\Display10_7.cpp(93,25): error C2062: 예기치 않은 'int' 형식입니다.
+  test.cpp
+  코드를 생성하고 있습니다...

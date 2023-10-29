@@ -127,11 +127,26 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="02-08_ex.cpp" />
-    <ClCompile Include="02-12_ex.cpp" />
-    <ClCompile Include="02-15_ex.cpp" />
-    <ClCompile Include="02-16_ex.cpp" />
+    <ClCompile Include="Display10_4.cpp" />
+    <ClCompile Include="Display10_7.cpp" />
+    <ClCompile Include="Display2_17.cpp" />
+    <ClCompile Include="Display2_8.cpp" />
+    <ClCompile Include="Display2_12.cpp" />
+    <ClCompile Include="Display2_15.cpp" />
+    <ClCompile Include="Display2_16.cpp" />
+    <ClCompile Include="Display3_10.cpp" />
+    <ClCompile Include="Display3_5.cpp" />
     <ClCompile Include="Chap2_1.cpp" />
+    <ClCompile Include="Display10_1.cpp" />
+    <ClCompile Include="Display10_2.cpp" />
+    <ClCompile Include="Display10_3.cpp" />
+    <ClCompile Include="Display1_10.cpp" />
+    <ClCompile Include="Display1_8.cpp" />
+    <ClCompile Include="Display2_1.cpp" />
+    <ClCompile Include="Display2_4.cpp" />
+    <ClCompile Include="Display2_5.cpp" />
+    <ClCompile Include="Display3_4.cpp" />
+    <ClCompile Include="test.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
