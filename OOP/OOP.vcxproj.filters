@@ -75,5 +75,11 @@
     <ClCompile Include="Display10_7.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\CAU_semester\3-2\객체지향프로그래밍-박은지\NotEnoughMinerals_exercise.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="15-13.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

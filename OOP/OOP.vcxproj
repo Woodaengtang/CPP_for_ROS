@@ -127,6 +127,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\CAU_semester\3-2\객체지향프로그래밍-박은지\NotEnoughMinerals_exercise.cpp" />
+    <ClCompile Include="15-13.cpp" />
     <ClCompile Include="Display10_4.cpp" />
     <ClCompile Include="Display10_7.cpp" />
     <ClCompile Include="Display2_17.cpp" />
